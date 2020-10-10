@@ -1,1 +1,1 @@
-Sitemap: https://sdaulton.github.io/flexible-jekyll/sitemap.xml
+Sitemap: https://sdaulton.github.io/sitemap.xml
