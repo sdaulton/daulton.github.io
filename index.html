@@ -66,12 +66,22 @@ layout: main
         <strong>Samuel Daulton* (*<em>equal contribution</em>)</strong>,
         <a href='https://cs.brown.edu/people/gdk/'>George Konidaris</a>, <a href='https://finale.seas.harvard.edu/'>Finale Doshi-Velez</a>
           <br>
-          [Oral] <em>Advances in Neural Information Processing Systems</em> 30, 2017.
+          <strong>[Oral]</strong> <em>Advances in Neural Information Processing Systems</em> 30, 2017.
           <br>
           <a href="http://papers.neurips.cc/paper/7205-robust-and-efficient-transfer-learning-with-hidden-parameter-markov-decision-processes" class='btn btn-default'>Paper</a> | <a href="https://github.com/dtak/hip-mdp-public" class='btn btn-default'>Code</a>
       </p>
 
       <h3>Workshop Papers</h3>
+      <a href="{{site.baseurl}}/"><img src="{{site.baseurl}}/assets/img/dts.jpeg" alt="{{site.author}}"></a>
+      <p>
+        <strong>Distilled Thompson Sampling: Practical and Efficient Thompson Sampling via Imitation Learning</strong>
+        <br>
+        We propose a practical method for distilling a Thompson sampling policy into a compact, explicit policy representation for contextual bandit optimization  in applications with limited memory and low-latency requirements. The expensive posterior sampling and numerical optimization is performed offline, while the imitation policy is used for efficient online decision-making. Since data is collected under the imitation policy, our method emulates an off-policy variant of Thompson sampling. We show that our method enjoys the same Bayes regret as the best UCB algorithm, up to a sum of single time step approximation errors. The approximation error is easily controlled in the presence of abudant "unlabeled" contexts (without an action or reward), which are available in many practical applications (e.g. firms typically have databases with features about different entities). Our empirical evaluation shows that our method achieves the same regret as Thompson sampling while achieving over an order of magnitude improvement in decision-time latency.
+        <br>
+        <a href='https://hsnamkoong.github.io/'>Hongseok Namkoong</a>*, <strong>Samuel Daulton* (*<em>equal contribution</em>)</strong>, <a href='http://eytan.github.io'>Eytan Bakshy</a>
+        <br>
+        <em><strong>[Oral]</strong> NeurIPS Offline Reinforcement Learning Workshop</em>, 2020.
+        <br>
       <a href="{{site.baseurl}}/"><img src="{{site.baseurl}}/assets/img/cts.jpg" alt="{{site.author}}"></a>
       <p>
         <strong>Thompson Sampling for Contextual Bandit Problems with Auxiliary Safety Constraints</strong>
