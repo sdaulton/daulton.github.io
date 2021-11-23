@@ -4,14 +4,14 @@ description: > # this means to ignore newlines until "baseurl:"
 permalink: ':title/'
 baseurl: # the subpath of your site, e.g. /blog
 url: "https://sdaulton.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-site-twitter: sdaulton8 #if your site has a twitter account, enter it here
+site-twitter: samjdaulton #if your site has a twitter account, enter it here
 
 # Author Settings
 author: Samuel (Sam) Daulton # add your name
 author-img: samuel-daulton.jpg # add your photo
 about-author: # add description
 social-google: beXm1FwAAAAJ # add your google scholar handle
-social-instagram: samdaulton # add your IG handle
+social-twitter: samjdaulton # add your IG handle
 social-facebook: # add your Facebook handle
 social-github: sdaulton # add your Github handle
 social-linkedin: samuel-daulton # add your Linkedin handle
