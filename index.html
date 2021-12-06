@@ -26,6 +26,18 @@ layout: main
       <h2><a name="publications"></a>Selected Publications</h2>
       <hr>
       <h3>Conference Publications</h3>
+      <a href="/"><img src="/assets/img/nehvi_thumbnail.png" alt="Samuel (Sam) Daulton"></a>
+      <p>
+        <strong>Parallel Bayesian Optimization of Multiple Noisy Objectives with Expected Hypervolume Improvement</strong>
+        <br>
+        Failure to account for noisy observations at the previously evaluated designs can degrade optimization performance and lead to clumped solutions on the Pareto frontier.To address this issue, we propose a new acquisition function q-Noisy Expected Hypervolume improvement (qNEHVI) that takes a Bayesian approach and integrates over the unknown function values at the previously evaluated points. qNEHVI is one-step Bayes optimal in noisy and noiseless environments (in the latter it is equivalent to expected hypervolume improvement). Although the iterated expectation in qNEHVI is intractable and computing qNEHVI involves computationally intensive, non-differentiable box decompositions, we show that qNEHVI can be efficiently estimated by caching the box decompositions (CBD) once per Bayesian optimization iteration and using sample-average approximation. Furthermore, we show how CBD can be used for efficient generating batches of candidate designs and reduces time/space complexity from exponential to polynomial in the batch size. We demonstrate state-of-the-art performance in sequential optimization, and we find that qNEHVI performs best regardless of the batch size.
+        <br>
+        <strong>Samuel Daulton</strong>, <a href='https://research.fb.com/people/balandat-max/'>Maxmilian Balandat</a>, <a href='http://eytan.github.io'>Eytan Bakshy</a>
+        <br>
+        <em>Advances in Neural Information Processing Systems</em> 34, 2021.
+        <br>
+        <a href="https://arxiv.org/abs/2105.08195" class='btn btn-default'>Paper</a> | <a href="https://botorch.org/tutorials/multi_objective_bo" class='btn btn-default'>Code</a> | <a href="https://youtu.be/XOYo_TNo3Gw" class='btn btn-default'>Video</a>
+      </p>
       <a href="{{site.baseurl}}/"><img src="{{site.baseurl}}/assets/img/qehvi.png" alt="{{site.author}}"></a>
       <p>
         <strong>Differentiable Expected Hypervolume Improvement for Parallel Multi-Objective Bayesian Optimization</strong>
