@@ -8,42 +8,42 @@
   <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
 
     <meta content="Samuel (Sam) Daulton" property="og:site_name">
-  
+
     <meta content="Samuel (Sam) Daulton" property="og:title">
-  
-  
+
+
     <meta content="website" property="og:type">
-  
-  
+
+
     <meta content="Personal website
 " property="og:description">
-  
-  
-    <meta content="https://sdaulton.github.io/" property="og:url">
-  
-  
-  
-    <meta content="https://sdaulton.github.io/assets/img/samuel-daulton.jpg" property="og:image">
-  
-  
-  
+
+
+    <meta content="http://localhost:4000/" property="og:url">
+
+
+
+    <meta content="http://localhost:4000/assets/img/samuel-daulton.jpg" property="og:image">
+
+
+
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@samjdaulton">
     <meta name="twitter:creator" content="@samjdaulton">
-  
+
     <meta name="twitter:title" content="Samuel (Sam) Daulton">
-  
-  
-    <meta name="twitter:url" content="https://sdaulton.github.io/">
-  
-  
+
+
+    <meta name="twitter:url" content="http://localhost:4000/">
+
+
     <meta name="twitter:description" content="Personal website
 ">
-  
-  
-    <meta name="twitter:image:src" content="https://sdaulton.github.io/assets/img/samuel-daulton.jpg">
-  
+
+
+    <meta name="twitter:image:src" content="http://localhost:4000/assets/img/samuel-daulton.jpg">
+
 
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -84,25 +84,25 @@
     <section class="contact">
       <h3 class="contact-title">Contact me</h3>
       <ul>
-        
-          <li><a href="https://scholar.google.com/citations?user=beXm1FwAAAAJ" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a></li>
-        
 
-        
-        
+          <li><a href="https://scholar.google.com/citations?user=beXm1FwAAAAJ" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+
+
+
+
           <li class="github"><a href="http://github.com/sdaulton" target="_blank"><i class="fa fa-github"></i></a></li>
-        
-        
+
+
           <li class="linkedin"><a href="https://in.linkedin.com/in/samuel-daulton" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-        
-        
-        
+
+
+
           <li><a href="https://twitter.com/samjdaulton" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-        
+
       </ul>
     </section> <!-- End Section Contact -->
     <div class="copyright">
-      <p>2021 &copy; Samuel (Sam) Daulton</p>
+      <p>2022 &copy; Samuel (Sam) Daulton</p>
     </div>
   </footer> <!-- End Footer -->
 </aside> <!-- End Sidebar -->
@@ -129,7 +129,33 @@
     </div>
 
     <div class="row">
-      <h2><a name="publications"></a>Selected Publications</h2>
+      <h2><a name="publications"></a>Selected Papers</h2>
+      <hr>
+      <h3>Preprints</h3>
+      <a href="/"><img src="/assets/img/robust_mobo_img.png" alt="Samuel (Sam) Daulton"></a>
+      <p>
+        <strong>Robust Multi-Objective Bayesian Optimization Under Input Noise</strong>
+        <br>
+        Bayesian optimization (BO) is a sample-efficient approach for tuning design parameters to optimize expensive-to-evaluate, black-box performance metrics. In many manufacturing processes, the design parameters are subject to random input noise, resulting in a product that is often less performant than expected. Although BO methods have been proposed for optimizing a single objective under input noise, no existing method addresses the practical scenario where there are multiple objectives that are sensitive to input perturbations. In this work, we propose the first multi-objective BO method that is robust to input noise. We formalize our goal as optimizing the multivariate value-at-risk (MVaR), a risk measure of the uncertain objectives. Since directly optimizing MVaR is computationally infeasible in many settings, we propose a scalable, theoretically-grounded approach for optimizing MVaR using random scalarizations. Empirically, we find that our approach significantly outperforms alternative methods and efficiently identifies optimal robust designs that will satisfy specifications across multiple metrics with high probability.
+        <br>
+        <strong>Samuel Daulton</strong>*, <a href='https://www.saitcakmak.com/'>Sait Cakmak</a>* (*<em>equal contribution</em>), <a href='https://research.fb.com/people/balandat-max/'>Maximilian Balandat</a>, <a href='https://www.robots.ox.ac.uk/~mosb/'>Michael A. Osborne</a>, <a href='https://www.enluzhou.gatech.edu/'>Enlu Zhou</a>, <a href='http://eytan.github.io'>Eytan Bakshy</a>
+        <br>
+        <em>ArXiv</em>, 2022.
+        <br>
+        <a href="https://arxiv.org/abs/2202.07549" class='btn btn-default'>Paper</a> | <a href="https://github.com/facebookresearch/robust_mobo" class='btn btn-default'>Code</a>
+      </p>
+      <a href="/"><img src="/assets/img/MORBO.png" alt="Samuel (Sam) Daulton"></a>
+      <p>
+        <strong>Multi-Objective Bayesian Optimization over High-Dimensional Search Spaces</strong>
+        <br>
+        The ability to optimize multiple competing objective functions with high sample efficiency is imperative in many applied problems across science and industry. Multi-objective Bayesian optimization (BO) achieves strong empirical performance on such problems, but even with recent methodological advances, it has been restricted to simple, low-dimensional domains. Most existing BO methods exhibit poor performance on search spaces with more than a few dozen parameters. In this work we propose MORBO, a method for multi-objective Bayesian optimization over high-dimensional search spaces. MORBO performs local Bayesian optimization within multiple trust regions simultaneously, allowing it to explore and identify diverse solutions even when the objective functions are difficult to model globally. We show that MORBO significantly advances the state-of-the-art in sample-efficiency for several high-dimensional synthetic and real-world multi-objective problems, including a vehicle design problem with 222 parameters, demonstrating that MORBO is a practical approach for challenging and important problems that were previously out of reach for BO methods.
+        <br>
+        <strong>Samuel Daulton</strong>*, <a href='https://dme65.github.io/'>David Eriksson</a>* (*<em>equal contribution</em>), <a href='https://research.fb.com/people/balandat-max/'>Maximilian Balandat</a>, <a href='http://eytan.github.io'>Eytan Bakshy</a>
+        <br>
+        <em>ArXiv</em>, 2021.
+        <br>
+        <a href="https://arxiv.org/abs/2109.10964" class='btn btn-default'>Paper</a>
+      </p>
       <hr>
       <h3>Conference Publications</h3>
       <a href="/"><img src="/assets/img/nehvi_thumbnail.png" alt="Samuel (Sam) Daulton"></a>
@@ -138,7 +164,7 @@
         <br>
         Failure to account for noisy observations at the previously evaluated designs can degrade optimization performance and lead to clumped solutions on the Pareto frontier.To address this issue, we propose a new acquisition function q-Noisy Expected Hypervolume improvement (qNEHVI) that takes a Bayesian approach and integrates over the unknown function values at the previously evaluated points. qNEHVI is one-step Bayes optimal in noisy and noiseless environments (in the latter it is equivalent to expected hypervolume improvement). Although the iterated expectation in qNEHVI is intractable and computing qNEHVI involves computationally intensive, non-differentiable box decompositions, we show that qNEHVI can be efficiently estimated by caching the box decompositions (CBD) once per Bayesian optimization iteration and using sample-average approximation. Furthermore, we show how CBD can be used for efficient generating batches of candidate designs and reduces time/space complexity from exponential to polynomial in the batch size. We demonstrate state-of-the-art performance in sequential optimization, and we find that qNEHVI performs best regardless of the batch size.
         <br>
-        <strong>Samuel Daulton</strong>, <a href='https://research.fb.com/people/balandat-max/'>Maxmilian Balandat</a>, <a href='http://eytan.github.io'>Eytan Bakshy</a>
+        <strong>Samuel Daulton</strong>, <a href='https://research.fb.com/people/balandat-max/'>Maximilian Balandat</a>, <a href='http://eytan.github.io'>Eytan Bakshy</a>
         <br>
         <em>Advances in Neural Information Processing Systems</em> 34, 2021.
         <br>
@@ -150,7 +176,7 @@
         <br>
         We propose a new state-of-the-art acquisition function for constrained Bayesian optimization of multiple competing objectives. The acquisition function is an exact calculation of expected hypervolume improvement other than monte-carlo integration error. It enables parallel (batch) evaluations via the inclusion-exclusion principle, and it is differentiable, which enables efficient gradient-based acquisition optimization. We prove that the sample average gradient of the Monte-Carlo acquisition is an unbiased estimator of the gradient of the true expected hypervolume improvement.
         <br>
-        <strong>Samuel Daulton</strong>, <a href='https://research.fb.com/people/balandat-max/'>Maxmilian Balandat</a>, <a href='http://eytan.github.io'>Eytan Bakshy</a>
+        <strong>Samuel Daulton</strong>, <a href='https://research.fb.com/people/balandat-max/'>Maximilian Balandat</a>, <a href='http://eytan.github.io'>Eytan Bakshy</a>
         <br>
         <em>Advances in Neural Information Processing Systems</em> 33, 2020.
         <br>
@@ -163,7 +189,7 @@
         <br>
         We propose a modular Monte-Carlo-based framework for developing new methods for Bayesian optimization. We include multiple examples including a novel one-shot optimization formulation of the Knowledge Gradient. We provide convergence guarantees for a broad class of quasi-Monte-Carlo acquisition functions using the sample average approximation.
         <br>
-        <a href='https://research.fb.com/people/balandat-max/'>Maxmilian Balandat</a>,
+        <a href='https://research.fb.com/people/balandat-max/'>Maximilian Balandat</a>,
         <a href='https://research.fb.com/people/karrer-brian/'>Brian Karrer</a>,
         <a href='http://pitt.edu/~drjiang/'>Daniel Jiang</a>,
         <strong>Samuel Daulton</strong>,
@@ -188,8 +214,21 @@
           <br>
           <a href="http://papers.neurips.cc/paper/7205-robust-and-efficient-transfer-learning-with-hidden-parameter-markov-decision-processes" class='btn btn-default'>Paper</a> | <a href="https://github.com/dtak/hip-mdp-public" class='btn btn-default'>Code</a>
       </p>
-
+      <hr>
       <h3>Workshop Papers</h3>
+      <a href="/"><img src="/assets/img/cv_nas.png" alt="Samuel (Sam) Daulton"></a>
+      <p>
+        <strong>Latency-Aware Neural Architecture Search with Multi-Objective Bayesian Optimization</strong>
+        <br>
+        When tuning the architecture and hyperparameters of large machine learning models for on-device deployment, it is desirable to understand the optimal trade-offs between on-device latency and model accuracy. In this work, we leverage recent methodological advances in Bayesian optimization over high-dimensional search spaces and multi-objective Bayesian optimization to efficiently explore these trade-offs for a production-scale on-device natural language understanding model at Facebook.
+        <br>
+        <a href='https://dme65.github.io/'>David Eriksson</a>*, Pierce I-Jen Chuang*, <strong>Samuel Daulton* (*<em>equal contribution</em>)</strong>, Peng Xia, Akshat Shrivastava, Arun Babu, Shicong Zhao, Ahmed Aly, Ganesh Venkatesh, <a href='https://research.fb.com/people/balandat-max/'>Maximilian Balandat</a>.
+        <br>
+        <em>ICML Workshop on Automated Machine Learning</em>, 2021.
+        <br>
+        <a href="https://arxiv.org/abs/2106.11890" class='btn btn-default'>Paper</a>
+      </p>
+      <br>
       <a href="/"><img src="/assets/img/dts.jpeg" alt="Samuel (Sam) Daulton"></a>
       <p>
         <strong>Distilled Thompson Sampling: Practical and Efficient Thompson Sampling via Imitation Learning</strong>
@@ -242,11 +281,11 @@
 &nbsp;
 </footer>
 
-<!-- 
+<!--
 <article class="post">
-  
+
     <a class="post-thumbnail" style="background-image: url(/assets/img/i-rest.jpg)" href="/how-i-rest-from-work/"></a>
-  
+
   <div class="post-content">
     <h2 class="post-title"><a href="/how-i-rest-from-work/">Botorch</a></h2>
     <p>Fam locavore snackwave bushwick +1 sartorial. Selfies portland knausgaard synth. Pop-up art party marfa deep...</p>
@@ -256,9 +295,9 @@
 </article>
 
 <article class="post">
-  
+
     <a class="post-thumbnail" style="background-image: url(/assets/img/software.jpg)" href="/the-best-organizer-software/"></a>
-  
+
   <div class="post-content">
     <h2 class="post-title"><a href="/the-best-organizer-software/">The Best Organizer Software</a></h2>
     <p>Church-key blog messenger bag, selfies umami man braid mlkshk. Pork belly cornhole meditation tumblr meh...</p>
@@ -268,9 +307,9 @@
 </article>
 
 <article class="post">
-  
+
     <a class="post-thumbnail" style="background-image: url(/assets/img/how-to-start.jpg)" href="/how-to-start-programming/"></a>
-  
+
   <div class="post-content">
     <h2 class="post-title"><a href="/how-to-start-programming/">How To Start Programming</a></h2>
     <p>Post-ironic jean shorts bushwick umami, synth beard austin hell of meh kitsch distillery sustainable plaid...</p>
@@ -280,9 +319,9 @@
 </article>
 
 <article class="post">
-  
+
     <a class="post-thumbnail" style="background-image: url(/assets/img/workflow.jpg)" href="/10-tips-to-improve-your-workflow/"></a>
-  
+
   <div class="post-content">
     <h2 class="post-title"><a href="/10-tips-to-improve-your-workflow/">10 Tips To Improve Your Workflow</a></h2>
     <p>Asymmetrical portland enamel pin af heirloom ramps authentic thundercats. Synth truffaut schlitz aesthetic, palo santo...</p>
@@ -292,9 +331,9 @@
 </article>
 
 <article class="post">
-  
+
     <a class="post-thumbnail" style="background-image: url(/assets/img/js-1.png)" href="/conference-on-javascript/"></a>
-  
+
   <div class="post-content">
     <h2 class="post-title"><a href="/conference-on-javascript/">Conference on Javascript</a></h2>
     <p>Jean shorts organic cornhole, gochujang post-ironic chicharrones authentic flexitarian viral PBR&amp;B forage wolf. Man braid...</p>
@@ -304,8 +343,8 @@
 </article>
 
 <article class="post">
-  
-  
+
+
   <div class="post-content">
     <h2 class="post-title"><a href="/welcome-to-jekyll/">Welcome to Jekyll!</a></h2>
     <p>You’ll find this post in your _posts directory. Go ahead and edit it and re-build...</p>
@@ -318,11 +357,11 @@
 <div class="container">
   <nav class="pagination" role="pagination">
     <ul>
-      
 
-      
-      
-      
+
+
+
+
     </ul>
   </nav>
 </div>
@@ -331,7 +370,7 @@
 </div>
 
   </div>
-  
+
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
