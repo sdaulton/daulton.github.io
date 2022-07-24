@@ -8,42 +8,42 @@
   <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
 
     <meta content="Samuel (Sam) Daulton" property="og:site_name">
-  
+
     <meta content="Samuel (Sam) Daulton" property="og:title">
-  
-  
+
+
     <meta content="website" property="og:type">
-  
-  
+
+
     <meta content="Personal website
 " property="og:description">
-  
-  
+
+
     <meta content="http://localhost:4000/" property="og:url">
-  
-  
-  
+
+
+
     <meta content="http://localhost:4000/assets/img/sam_daulton_headshot.jpeg" property="og:image">
-  
-  
-  
+
+
+
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@samjdaulton">
     <meta name="twitter:creator" content="@samjdaulton">
-  
+
     <meta name="twitter:title" content="Samuel (Sam) Daulton">
-  
-  
+
+
     <meta name="twitter:url" content="http://localhost:4000/">
-  
-  
+
+
     <meta name="twitter:description" content="Personal website
 ">
-  
-  
+
+
     <meta name="twitter:image:src" content="http://localhost:4000/assets/img/sam_daulton_headshot.jpeg">
-  
+
 
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -84,21 +84,21 @@
     <section class="contact">
       <h3 class="contact-title">Contact me</h3>
       <ul>
-        
-          <li><a href="https://scholar.google.com/citations?user=beXm1FwAAAAJ" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a></li>
-        
 
-        
-        
+          <li><a href="https://scholar.google.com/citations?user=beXm1FwAAAAJ" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+
+
+
+
           <li class="github"><a href="http://github.com/sdaulton" target="_blank"><i class="fa fa-github"></i></a></li>
-        
-        
+
+
           <li class="linkedin"><a href="https://in.linkedin.com/in/samuel-daulton" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-        
-        
-        
+
+
+
           <li><a href="https://twitter.com/samjdaulton" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-        
+
       </ul>
     </section> <!-- End Section Contact -->
     <div class="copyright">
@@ -215,6 +215,19 @@
       </p>
       <hr>
       <h3>Workshop Papers</h3>
+      <a href="/"><img src="/assets/img/BO_Probabilistic_Reparameterization.png" alt="Samuel (Sam) Daulton"></a>
+      <p>
+        <strong>Bayesian Optimization over Discrete and Mixed Spaces via Probabilistic Reparameterization</strong>
+        <br>
+        Optimizing expensive-to-evaluate black-box functions of discrete (and potentially continuous) design parameters is a ubiquitous problem in scientific and engineering applications. Bayesian optimization (BO) is a popular sample-efficient method that selects promising designs to evaluate by optimizing an acquisition function (AF) over some domain based on a probabilistic surrogate model. However, maximizing the AF over mixed or high-cardinality discrete search spaces is challenging as we cannot use standard gradient-based methods or evaluate the AF at every point in the search space. To address this issue, we propose using probabilistic reparameterization (PR). Instead of directly optimizing the AF over the search space containing discrete parameters, we instead maximize the expectation of the AF over a probability distribution defined by continuous parameters. We prove that under suitable reparameterizations, the BO policy that maximizes the probabilistic objective is the same as that which maximizes the AF, and therefore, PR enjoys the same regret bounds as the underlying AF. Moreover, our approach admits provably converges to a stationary point of the probabilistic objective under gradient ascent using scalable, unbiased estimators of both the probabilistic objective and its gradient, and therefore, as the numbers of starting points and gradient steps increase our approach will recover of a maximizer of the AF (an often neglected requisite for commonly-used BO regret bounds). We validate our approach empirically and demonstrate state-of-the-art optimization performance on many real-world applications. PR is complementary to (and benefits) recent work and naturally generalizes to settings with multiple objectives and black-box constraints.
+        <br>
+        <strong>Samuel Daulton</strong>, <a href='https://www.robots.ox.ac.uk/~xwan/'>Xingchen Wan</a>, <a href='https://dme65.github.io/'>David Eriksson</a>, <a href='https://research.fb.com/people/balandat-max/'>Maximilian Balandat</a>, <a href='https://www.robots.ox.ac.uk/~mosb/'>Michael A. Osborne</a>, <a href='http://eytan.github.io'>Eytan Bakshy</a>.
+        <br>
+        <em>ICML Workshop on Adaptive Experimenal Design and Active Learning in the Real World</em>, 2022.
+        <br>
+        <a href="https://realworldml.github.io/files/cr/paper22.pdf" class='btn btn-default'>Paper</a>
+      </p>
+      <br>
       <a href="/"><img src="/assets/img/cv_nas.png" alt="Samuel (Sam) Daulton"></a>
       <p>
         <strong>Latency-Aware Neural Architecture Search with Multi-Objective Bayesian Optimization</strong>
@@ -280,11 +293,11 @@
 &nbsp;
 </footer>
 
-<!-- 
+<!--
 <article class="post">
-  
+
     <a class="post-thumbnail" style="background-image: url(/assets/img/i-rest.jpg)" href="/how-i-rest-from-work/"></a>
-  
+
   <div class="post-content">
     <h2 class="post-title"><a href="/how-i-rest-from-work/">Botorch</a></h2>
     <p>Fam locavore snackwave bushwick +1 sartorial. Selfies portland knausgaard synth. Pop-up art party marfa deep...</p>
@@ -294,9 +307,9 @@
 </article>
 
 <article class="post">
-  
+
     <a class="post-thumbnail" style="background-image: url(/assets/img/software.jpg)" href="/the-best-organizer-software/"></a>
-  
+
   <div class="post-content">
     <h2 class="post-title"><a href="/the-best-organizer-software/">The Best Organizer Software</a></h2>
     <p>Church-key blog messenger bag, selfies umami man braid mlkshk. Pork belly cornhole meditation tumblr meh...</p>
@@ -306,9 +319,9 @@
 </article>
 
 <article class="post">
-  
+
     <a class="post-thumbnail" style="background-image: url(/assets/img/how-to-start.jpg)" href="/how-to-start-programming/"></a>
-  
+
   <div class="post-content">
     <h2 class="post-title"><a href="/how-to-start-programming/">How To Start Programming</a></h2>
     <p>Post-ironic jean shorts bushwick umami, synth beard austin hell of meh kitsch distillery sustainable plaid...</p>
@@ -318,9 +331,9 @@
 </article>
 
 <article class="post">
-  
+
     <a class="post-thumbnail" style="background-image: url(/assets/img/workflow.jpg)" href="/10-tips-to-improve-your-workflow/"></a>
-  
+
   <div class="post-content">
     <h2 class="post-title"><a href="/10-tips-to-improve-your-workflow/">10 Tips To Improve Your Workflow</a></h2>
     <p>Asymmetrical portland enamel pin af heirloom ramps authentic thundercats. Synth truffaut schlitz aesthetic, palo santo...</p>
@@ -330,9 +343,9 @@
 </article>
 
 <article class="post">
-  
+
     <a class="post-thumbnail" style="background-image: url(/assets/img/js-1.png)" href="/conference-on-javascript/"></a>
-  
+
   <div class="post-content">
     <h2 class="post-title"><a href="/conference-on-javascript/">Conference on Javascript</a></h2>
     <p>Jean shorts organic cornhole, gochujang post-ironic chicharrones authentic flexitarian viral PBR&amp;B forage wolf. Man braid...</p>
@@ -342,8 +355,8 @@
 </article>
 
 <article class="post">
-  
-  
+
+
   <div class="post-content">
     <h2 class="post-title"><a href="/welcome-to-jekyll/">Welcome to Jekyll!</a></h2>
     <p>You’ll find this post in your _posts directory. Go ahead and edit it and re-build...</p>
@@ -356,11 +369,11 @@
 <div class="container">
   <nav class="pagination" role="pagination">
     <ul>
-      
 
-      
-      
-      
+
+
+
+
     </ul>
   </nav>
 </div>
@@ -369,7 +382,7 @@
 </div>
 
   </div>
-  
+
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
