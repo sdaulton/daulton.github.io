@@ -131,7 +131,30 @@
     <div class="row">
       <h2><a name="publications"></a>Selected Papers</h2>
       <hr>
-      <h3>Conference Publications</h3>
+      <h3>Publications</h3>
+      <a href="/"><img src="/assets/img/BO_Probabilistic_Reparameterization.png" alt="Samuel (Sam) Daulton"></a>
+      <p>
+        <strong>Bayesian Optimization over Discrete and Mixed Spaces via Probabilistic Reparameterization</strong>
+        <br>
+        Optimizing expensive-to-evaluate black-box functions of discrete (and potentially continuous) design parameters is a ubiquitous problem in scientific and engineering applications. Bayesian optimization (BO) is a popular sample-efficient method that selects promising designs to evaluate by optimizing an acquisition function (AF) over some domain based on a probabilistic surrogate model. However, maximizing the AF over mixed or high-cardinality discrete search spaces is challenging as we cannot use standard gradient-based methods or evaluate the AF at every point in the search space. To address this issue, we propose using probabilistic reparameterization (PR). Instead of directly optimizing the AF over the search space containing discrete parameters, we instead maximize the expectation of the AF over a probability distribution defined by continuous parameters. We prove that under suitable reparameterizations, the BO policy that maximizes the probabilistic objective is the same as that which maximizes the AF, and therefore, PR enjoys the same regret bounds as the underlying AF. Moreover, our approach admits provably converges to a stationary point of the probabilistic objective under gradient ascent using scalable, unbiased estimators of both the probabilistic objective and its gradient, and therefore, as the number of starting points and gradient steps increase our approach will recover of a maximizer of the AF (an often-neglected requisite for commonly used BO regret bounds). We validate our approach empirically and demonstrate state-of-the-art optimization performance on many real-world applications. PR is complementary to (and benefits) recent work and naturally generalizes to settings with multiple objectives and black-box constraints.
+        <br>
+        <strong>Samuel Daulton</strong>, <a href='https://www.robots.ox.ac.uk/~xwan/'>Xingchen Wan</a>, <a href='https://dme65.github.io/'>David Eriksson</a>, <a href='https://research.fb.com/people/balandat-max/'>Maximilian Balandat</a>, <a href='https://www.robots.ox.ac.uk/~mosb/'>Michael A. Osborne</a>, <a href='http://eytan.github.io'>Eytan Bakshy</a>.
+        <br>
+        <em>Advances in Neural Information Processing Systems</em> 35, 2022.
+        <br>
+      </p>
+      <br>
+      <a href="/"><img src="/assets/img/sros.png" alt="Samuel (Sam) Daulton"></a>
+      <p>
+        <strong>Log-Linear-Time Gaussian Processes with Binary Tree Kernels</strong>
+        <br>
+        Gaussian processes (GPs) produce good probabilistic models of functions, but most GP kernels require cubic time in the number of data points. We present a new kernel that allows for Gaussian process regression in log-linear time. Our "binary tree" kernel places all data points on the leaves of a binary tree, with the kernel depending only on the depth of the deepest common ancestor. We can store the resulting kernel matrix in linear space in log-linear time, as a sum of sparse rank-one matrices, and approximately invert the kernel matrix in linear time. Sparse GP methods also offer linear run time, but they predict less well than higher dimensional kernels. On a classic suite of regression tasks, we compare our kernel against Matern, sparse, and sparse variational kernels. The binary tree GP assigns the highest likelihood to the test data on a plurality of datasets, usually achieves lower mean squared error than the sparse methods, and often ties or beats the Matern GP. On large datasets, the binary tree GP is fastest, and much faster than a Matern GP.
+        <br>
+        <a href='https://www.michael-k-cohen.com/'>Michael K. Cohen</a>, <strong>Samuel Daulton</strong>, <a href='https://www.robots.ox.ac.uk/~mosb/'>Michael A. Osborne</a>
+        <br>
+        <em>Advances in Neural Information Processing Systems</em> 35, 2022.
+        <br>
+      </p>
       <a href="/"><img src="/assets/img/robust_mobo_img.png" alt="Samuel (Sam) Daulton"></a>
       <p>
         <strong>Robust Multi-Objective Bayesian Optimization Under Input Noise</strong>
@@ -214,20 +237,7 @@
           <a href="http://papers.neurips.cc/paper/7205-robust-and-efficient-transfer-learning-with-hidden-parameter-markov-decision-processes" class='btn btn-default'>Paper</a> | <a href="https://github.com/dtak/hip-mdp-public" class='btn btn-default'>Code</a>
       </p>
       <hr>
-      <h3>Workshop Papers</h3>
-      <a href="/"><img src="/assets/img/BO_Probabilistic_Reparameterization.png" alt="Samuel (Sam) Daulton"></a>
-      <p>
-        <strong>Bayesian Optimization over Discrete and Mixed Spaces via Probabilistic Reparameterization</strong>
-        <br>
-        Optimizing expensive-to-evaluate black-box functions of discrete (and potentially continuous) design parameters is a ubiquitous problem in scientific and engineering applications. Bayesian optimization (BO) is a popular sample-efficient method that selects promising designs to evaluate by optimizing an acquisition function (AF) over some domain based on a probabilistic surrogate model. However, maximizing the AF over mixed or high-cardinality discrete search spaces is challenging as we cannot use standard gradient-based methods or evaluate the AF at every point in the search space. To address this issue, we propose using probabilistic reparameterization (PR). Instead of directly optimizing the AF over the search space containing discrete parameters, we instead maximize the expectation of the AF over a probability distribution defined by continuous parameters. We prove that under suitable reparameterizations, the BO policy that maximizes the probabilistic objective is the same as that which maximizes the AF, and therefore, PR enjoys the same regret bounds as the underlying AF. Moreover, our approach admits provably converges to a stationary point of the probabilistic objective under gradient ascent using scalable, unbiased estimators of both the probabilistic objective and its gradient, and therefore, as the numbers of starting points and gradient steps increase our approach will recover of a maximizer of the AF (an often neglected requisite for commonly-used BO regret bounds). We validate our approach empirically and demonstrate state-of-the-art optimization performance on many real-world applications. PR is complementary to (and benefits) recent work and naturally generalizes to settings with multiple objectives and black-box constraints.
-        <br>
-        <strong>Samuel Daulton</strong>, <a href='https://www.robots.ox.ac.uk/~xwan/'>Xingchen Wan</a>, <a href='https://dme65.github.io/'>David Eriksson</a>, <a href='https://research.fb.com/people/balandat-max/'>Maximilian Balandat</a>, <a href='https://www.robots.ox.ac.uk/~mosb/'>Michael A. Osborne</a>, <a href='http://eytan.github.io'>Eytan Bakshy</a>.
-        <br>
-        <em>ICML Workshop on Adaptive Experimental Design and Active Learning in the Real World</em>, 2022.
-        <br>
-        <a href="https://realworldml.github.io/files/cr/paper22.pdf" class='btn btn-default'>Paper</a> <a href="https://github.com/facebookresearch/bo_pr" class='btn btn-default'>Code</a>
-      </p>
-      <br>
+      <h3>Refereed Workshop Papers</h3>
       <a href="/"><img src="/assets/img/cv_nas.png" alt="Samuel (Sam) Daulton"></a>
       <p>
         <strong>Latency-Aware Neural Architecture Search with Multi-Objective Bayesian Optimization</strong>
